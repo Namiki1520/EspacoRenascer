@@ -1,5 +1,33 @@
 @charset "UTF-8";
+header {
+	background-image: url('path/to/header-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
 
+nav {
+	background-image: url('path/to/nav-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+main {
+	background-image: url('path/to/main-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+aside {
+	background-image: url('path/to/aside-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+footer {
+	background-image: url('path/to/footer-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
 /* Propriedades que se aplicam a todos os elementos da página. */
 * {
 	/* Remove a margem externa de todos os lados do elemento. */
