@@ -33,7 +33,6 @@ body {
 
 /* Formatação comum entre os elementos. */
 header, nav, main, aside, footer {
-	/* Cor do fundo. */
 	/* Exibição flexível.                          */
 	/* Torna o elemento um flex container          */
 	/* e os seus elementos internos em flex-itens. */
@@ -47,27 +46,7 @@ header, nav, aside, footer {
 	/* Cor do fundo. */
 	background-color: #355347;
 }
-main {
-	background-color: #b28c68;
 
-	/* Adiciona padding para melhor espaçamento interno */
-	padding: 10px;
-
-	/* Define uma largura mínima e máxima para melhor responsividade */
-	min-width: 300px;
-	max-width: 100%;
-
-	/* Define uma altura mínima e máxima para melhor responsividade */
-	min-height: 200px;
-	max-height: calc(100vh - 330px);
-
-	/* Ajusta a largura e altura automaticamente */
-	width: auto;
-	height: auto;
-
-	/* Adiciona margem automática para centralizar o conteúdo */
-	margin: auto;
-}
 /* Seletores para formatação individual. */
 
 header {
@@ -154,6 +133,9 @@ nav a {
 }
 
 main {
+	/* Cor do fundo. */
+	background-color: #b28c68;
+
 	/* Realizar a subtração de 100% da altura vertical menos a soma    */
 	/* da altura dos elementos ( 300px ) com as suas margens ( 30px ). */
 	height: calc(100vh - 330px);
