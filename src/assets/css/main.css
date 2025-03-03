@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 /* Propriedades que se aplicam a todos os elementos da página. */
 * {
 	/* Remove a margem externa de todos os lados do elemento. */
@@ -100,7 +100,7 @@ header #logo {
 	/* (superior, direito, inferior e esquerdo) */
 	padding: 0px 5px 0px 5px;
 
-	/* Muda o cursor do mouse para ponteiro.*/
+	/* Muda o cursor do mouse para ponteiro. */
 	cursor: pointer;
 
 	/* Oculta o elemento. */
@@ -145,6 +145,9 @@ main {
 	/* flex-shrink - Capacidade de redução do item.    */
 	/* flex-basis – Tamanho inicial do item.           */
 	flex: 20 1 500px;
+
+	/* Exibição flexível. */
+	display: flex;
 }
 
 aside {
@@ -153,6 +156,9 @@ aside {
 	/* flex-shrink - Capacidade de redução do item.    */
 	/* flex-basis – Tamanho inicial do item.           */
 	flex: 1 1 200px;
+
+	/* Exibição flexível. */
+	display: flex;
 }
 
 footer {
@@ -164,6 +170,9 @@ footer {
 	/* flex-shrink - Capacidade de redução do item.    */
 	/* flex-basis – Tamanho inicial do item.           */
 	flex: 1 1 100vw;
+
+	/* Exibição flexível. */
+	display: flex;
 }
 
 a {
@@ -241,5 +250,37 @@ a {
 
 	aside {
 		height: 100px;
+	}
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Carousel Caption */
+.carousel-caption {
+	display: flex;
+}
+
+/* Responsive */
+
+@media (min-width: 992px) {
+
+	.carousel-caption h5 {
+		font-size: 4rem;
+	}
+
+	main {
+		height: auto;
+		display: flex;
+		justify-content: center;
 	}
 }
